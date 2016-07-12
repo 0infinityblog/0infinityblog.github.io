@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>::Das::</title>
+
+  <link rel="shortcut icon" href="pp_thumb.png">
+
+
+  <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <header class="blue-grey lighten-1">
+      <div class="container position-relative">
+
+        <div class="single-logo">
+          <div class="row">
+            <div class="col s4 offset-s4"> 
+              <img src="logo.png">
+            </div>
+          </div>
+          <!-- <a href="index-2.html"><img src="logo.png" alt="logo"></a><h6 class="white-text"><em>a blog to express your ideas</em></h6> -->
+        </div>
+
+        <div class="menu-icon">
+          <a href="#" data-activates="slide-out" class="white-text button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+        </div>        
+
+        <div class="navbar-fixed">
+        <nav>
+            <ul id="slide-out" class="side-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="post-2.html">Single post</a></li>
+            <li><a href="contact-2.html">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="container">
+
+        <div class="row">
+          <div class="col s12 m4 center">
+            <h3>Address</h3>
+            <p>
+              Wave Run<br>
+              Apt. No. 12, CA
+            </p>
+          </div>
+
+          <div class="col s12 m4 center margin-top-s-32">
+            <h3>Contacts</h3>
+            <p>
+              +000 000 000<br>
+              <a href="mailto:kabird1196@gmail.com">Kabir Das</a>
+            </p>
+          </div>
+
+          <div class="col s12 m4 center margin-top-s-32">
+            <h3>Social</h3>
+            <p>
+              <a href="http://facebook.com" target="_blank">facebook</a><br>
+              <a href="http://twitter.com" target="_blank">twitter</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 margin-top-64">
+            
+            <form id="theme-contact" method="post" role="form" action="mail.php">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="contact-first-name" name="contact-first-name" type="text" class="validate" required>
+                  <label for="contact-first-name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="contact-last-name" name="contact-last-name" type="text" class="validate" required>
+                  <label for="contact-last-name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="contact-email" name="contact-email" type="email" class="validate" required>
+                  <label for="contact-email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="contact-subject" name="contact-subject" type="text" class="validate" required>
+                  <label for="contact-subject">Subject</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="contact-message" name="contact-message" class="materialize-textarea" required></textarea>
+                  <label for="contact-message">Message</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <button class="btn waves-effect waves-light blue-grey darken-1" type="submit" name="action">Submit</button>
+                </div>
+              </div>
+            </form>
+
+            <div id="theme-form-messages"></div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="contacts blue-grey lighten-4 center">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m3">
+            <a href="http://facebook.com" target="_blank">FACEBOOK</a>
+          </div>
+          <div class="col s12 m3 margin-top-s-16">
+            <a href="http://twitter.com" target="_blank">TWITTER</a>
+          </div>
+          <div class="col s12 m3 margin-top-s-16">
+            <a href="http://plus.google.com" target="_blank">GOOGLE PLUS</a>
+          </div>
+          <div class="col s12 m3 margin-top-s-16">
+            <a href="http://pinterest.com" target="_blank">PINTEREST</a>
+          </div>
+        </div>
+        <div class="row margin-top-32">
+          <form class="col s10 offset-s1 m8 offset-m2" method="post">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="newsletter-email" type="email" class="validate">
+                <label for="newsletter-email">Subscribe to the newsletter</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="white center">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col s12">
+            <p>made with <i class="mdi-action-favorite-outline red-text"></i> by <a href="http://kabirdas.xyz">Kabir Das</a></p>
+          </div>
+        </div>
+
+        <a class="back-to-top btn-floating btn-large waves-effect waves-light blue-grey darken-1" href="#header"><i class="mdi-navigation-expand-less"></i></a>
+
+      </div>
+    </footer>
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/jquery.smooth-scroll.min.js"></script>
+
+</body>
+</html>
